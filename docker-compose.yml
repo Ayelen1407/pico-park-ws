@@ -2,6 +2,7 @@ name: picopark-ayelen
 
 services:
   picopark-server:
+    image: bel3n/picopark-server:v1.0
     build:
       context: .
       dockerfile: servidor/Dockerfile
