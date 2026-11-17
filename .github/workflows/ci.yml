@@ -1,4 +1,3 @@
-# Test de pipeline corregido
 name: CI Docker Hub
 
 on:
