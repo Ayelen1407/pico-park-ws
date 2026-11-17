@@ -25,7 +25,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: host/Dockerfile
+          file: servidor/Dockerfile
           push: true
           tags: bel3n/picopark-server:v1.0
 
