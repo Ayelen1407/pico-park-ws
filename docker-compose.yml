@@ -1,0 +1,14 @@
+name: picopark-ayelen
+
+services:
+  picopark-server:
+    build:
+      context: .
+      dockerfile: servidor/Dockerfile
+    container_name: picopark-servidor-ayelen
+    ports:
+      - "3002:3000"
+    environment:
+      - HOST_PUBLICO=10.56.31.30
+      - PUERTO_PUBLICO=3002
+    restart: unless-stopped
